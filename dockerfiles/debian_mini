@@ -13,4 +13,5 @@ RUN echo 'root:password' | chpasswd
 RUN curl -OL https://github.com/utwente-fmt/vercors/releases/download/v2.2.0/vercors-2.2.0-debian.deb
 RUN dpkg -i vercors-2.2.0-debian.deb
 RUN rm vercors-2.2.0-debian.deb
+RUN vercors --version
 CMD [ "/bin/bash" ]
